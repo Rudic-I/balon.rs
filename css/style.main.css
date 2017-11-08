@@ -247,6 +247,12 @@ footer section:nth-child(2) p {
 		margin: 25px 5px;
 	}
 }
+@media screen and (max-width: 500px){
+	nav ul li {
+		margin: 25px 5px;
+		padding: 7px;
+	}
+}
 /*blue: #00a5fe*/
 /*violet: #8f08bd*/
 /*pink: #ff00ff*/
