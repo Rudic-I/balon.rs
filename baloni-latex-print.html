@@ -25,8 +25,8 @@
 			<ul class="nav-top nav-lvl1">
 				<li>
 					<div>
-						<div class="nav-circle"><img src="img/kategorije.gif" alt="sve kategorije.jpg"></div>
-						<p class="all-categories-btn">Sve<br>kategorije</p>
+						<div class="nav-circle"><img src="img/kategorije.png" alt="sve kategorije.jpg" class="all-categories-btn"></div>
+						<p class="all-categories-btn" id="all-categories-p">Sve<br>kategorije</p>
 					</div>
 					<ul class="nav-drop nav-lvl2">
 						<li class="balon-btn">
@@ -35,18 +35,18 @@
 								<li><a href="baloni-latex.html">Latex baloni</a></li>
 								<li><a href="baloni-folija.html">Folija baloni</a></li>
 								<li><a href="baloni-stampa.html">Štampa</a></li>
-								<li><a href="baloni-dekor">Dekoracije</a></li>
-								<li><a href="baloni-oprema">Oprema</a></li>
+								<li><a href="baloni-dekor.html">Dekoracije</a></li>
+								<li><a href="baloni-oprema.html">Oprema</a></li>
 							</ul>
 						</li>
 						<li><a href="party.html">Party</a></li>
-						<li><a href="oprema.html">Promo</a></li>
+						<li><a href="promo.html">Promo</a></li>
 					</ul>
 				</li>
 				<li>
 					<a href="#akcija">
 						<div>
-							<div class="nav-circle"><img src="img/akcije.gif" alt="akcije.jpg"></div>
+							<div class="nav-circle"><img src="img/akcije.png" alt="akcije.jpg"></div>
 							<p>Akcija</p>
 						</div>
 					</a>
@@ -54,7 +54,7 @@
 				<li>
 					<a href="https://www.flickr.com/photos/balon_rs/" target="_blank">
 						<div>
-							<div class="nav-circle"><img src="img/galerija.gif" alt="galerija.jpg"></div>
+							<div class="nav-circle"><img src="img/galerija.png" alt="galerija.jpg"></div>
 							<p>Galerija</p>
 						</div>
 					</a>
@@ -62,7 +62,7 @@
 				<li>
 					<a href="#kontakt">
 						<div>
-							<div class="nav-circle"><img src="img/kontakt.gif" alt="kontakt.jpg"></div>
+							<div class="nav-circle"><img src="img/kontakt.png" alt="kontakt.jpg"></div>
 							<p>Kontakt</p>
 						</div>
 					</a>
@@ -73,39 +73,45 @@
 	<main>
 		<section class="categories-two main-content-wrapper-1200">
 			<a href="baloni-latex-print-tufne.html">
-				<article>
+				<article class="category-wrap">
 					<img src="img/Tufne.jpg" alt="tufne.jpg">
-					<div>
+					<div class="category-text-wrap">
 						<h4>12" tufne</h4>
-						<h3 class="tufne-h3">EUR <span>0,20</span></h3>
+						<h3 class="margin-bottom-0">EUR <span>0,20</span></h3>
 						<p>Idealni za dekoraciju svih vrsta događaja. Odlično se kombinuju sa folija balonima.</p>
 					</div>
 				</article>
 			</a>
-			<article>
-				<img src="img/I love you.jpg" alt="love.jpg">
-				<div>
-					<h4>12" i love you</h4>
-					<h3>EUR <span>0,20</span></h3>
-					<p>Boje na raspolaganju<br>bela</p>
-				</div>
-			</article>
-			<article>
-				<img src="img/Happy Birthday.jpg" alt="happy b-day.jpg">
-				<div>
-					<h4>12" happy birthday</h4>
-					<h3>EUR 0,20</h3>
-					<p>Boje na raspolaganju<br>raznobojni</p>
-				</div>
-			</article>
-			<article>
-				<img src="img/Girl Boy.jpg" alt="girl boy.jpg">
-				<div>
-					<h4>12" it's a girl/boy</h4>
-					<h3>EUR 0,20</h3>
-					<p>Boje na raspolaganju<br>baby pink i baby blue</p>
-				</div>
-			</article>
+			<a href="baloni-latex-print-love.html">
+				<article class="category-wrap">
+					<img src="img/I love you.jpg" alt="love.jpg">
+					<div class="category-text-wrap">
+						<h4>12" i love you</h4>
+						<h3>EUR <span>0,20</span></h3>
+						<p>Boje na raspolaganju<br>bela</p>
+					</div>
+				</article>
+			</a>
+			<a href="baloni-latex-print-birthday.html">
+				<article class="category-wrap">
+					<img src="img/Happy Birthday.jpg" alt="happy b-day.jpg">
+					<div class="category-text-wrap">
+						<h4>12" happy birthday</h4>
+						<h3>EUR 0,20</h3>
+						<p>Boje na raspolaganju<br>raznobojni</p>
+					</div>
+				</article>
+			</a>
+			<a href="baloni-latex-print-girl-boy.html">
+				<article class="category-wrap">
+					<img src="img/Girl Boy.jpg" alt="girl boy.jpg">
+					<div class="category-text-wrap">
+						<h4>12" it's a girl/boy</h4>
+						<h3>EUR 0,20</h3>
+						<p>Boje na raspolaganju<br>baby pink i baby blue</p>
+					</div>
+				</article>
+			</a>
 		</section>
 		<section id="akcija">
 			<h2>Akcije i aktuelno</h2>
@@ -125,7 +131,7 @@
 					11000 Novi Beograd<br>
 					+381 11 408 29 07<br>
 					+381 63 410 722<br>
-					<a href="mailto:balonprotim@gmail.com"></a>balonprotim@gmail.com
+					<a href="mailto:balonprotim@gmail.com">balonprotim@gmail.com</a>
 					</address>
 				</div>
 				<div class="address-image-wrap">
