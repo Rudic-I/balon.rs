@@ -414,6 +414,7 @@ main {
 }
 .carousel .item {
 	margin: 0px 5px;
+	cursor: pointer;
 }
 .carousel div img {
 	width: 100%;
