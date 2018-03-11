@@ -232,12 +232,12 @@ main {
 }
 .categories-two-dekor .prices-dekor .quantity,
 .categories-two-stampa .prices-stampa .quantity {
-	font-size: 22px;
+	font-size: 20px;
 	padding: 3px;
 }
 .categories-two-dekor .prices-dekor .price,
 .categories-two-stampa .prices-stampa .price {
-	font-size: 18px;
+	font-size: 16px;
 	padding: 5px 6px;
 }
 .categories-two-dekor .prices-dekor hr,
