@@ -538,10 +538,9 @@ address {
 		left: 50%;
 	}
 	.categories-two-stampa article {
+		width: 45%;
+		display: inline-block;
 		vertical-align: top;
-	}
-	.categories-two-stampa article div {
-		bottom: 0;
 	}
 	.categories-two-stampa .prices-stampa {
 		height: 220px;
@@ -564,10 +563,6 @@ address {
 	.address-image-wrap {
 		margin-top: 0;
 		padding: 0 0 25px;
-	}
-	.categories-two-stampa article {
-		width: 45%;
-		display: inline-block;
 	}
 }
 
@@ -594,5 +589,11 @@ address {
 	}
 	.categories-two-dekor .products-wrap {
 		width: 32%;
+	}
+	.categories-two-stampa article img {
+		width: 220px;
+	}
+	.categories-two-stampa article div {
+		left: 52%;
 	}
 }
