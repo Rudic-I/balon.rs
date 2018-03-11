@@ -6,22 +6,21 @@
 
 // slike za AKCIJE I AKTUELNO
 var carouselAkcijeImages = [
-['img/folija-crtani.jpg', 'folija crtani.jpg'],
-['img/folija-bebe.jpg', 'folija bebe.jpg'],
-['img/Bombone.jpg', 'folija bombone.jpg'],
-['img/folija-crtani.jpg', 'folija crtani.jpg'],
-['img/folija-ljubavni.jpg', 'folija ljubavni.jpg'],
-['img/folija-bebe.jpg', 'folija bebe.jpg'],
+['img/baloni-latex-print.jpg', 'baloni-latex-print.jpg'],
+['img/baloni-latex.jpg', 'folija bebe.jpg'],
+['img/baloni-folija.jpg', 'folija bombone.jpg'],
+['img/Happy Birthday.jpg', 'folija crtani.jpg'],
+['img/Girl Boy.jpg', 'folija ljubavni.jpg'],
+['img/Srca.jpg', 'folija bebe.jpg'],
 ];
 
 // slike za INSPIRACIONE DEKORACIJE
 var carouselDekorImages = [
-['img/Bombone.jpg', 'folija bombone.jpg'],
-['img/folija-crtani.jpg', 'folija crtani.jpg'],
-['img/folija-bebe.jpg', 'folija bebe.jpg'],
-['img/folija-ljubavni.jpg', 'folija ljubavni.jpg'],
-['img/Bombone.jpg', 'folija bombone.jpg'],
-['img/folija-crtani.jpg', 'folija crtani.jpg'],
-['img/folija-bebe.jpg', 'folija bebe.jpg'],
-['img/folija-ljubavni.jpg', 'folija ljubavni.jpg'],
+['img/Tufne.jpg', 'folija bombone.jpg'],
+['img/Voce.jpg', 'folija crtani.jpg'],
+['img/Transparent.jpg', 'folija bebe.jpg'],
+['img/I love you.jpg', 'folija ljubavni.jpg'],
+['img/Drzaci.jpg', 'folija crtani.jpg'],
+['img/dekor 7.jpg', 'folija bebe.jpg'],
+['img/dekor 8.jpg', 'folija ljubavni.jpg'],
 ];

@@ -29,14 +29,14 @@ $(document).ready(function(){
     var carouselAkcijeDiv = $('.carousel-akcije');
     for (var i = 0; i < carouselAkcijeImages.length; i++) {
     	var itemAkcijeDiv = $('<div class="item"></div>');
-    	var itemAkcijeImg = $('<img src="' + carouselAkcijeImages[i][0] + '" alt=" '+ carouselAkcijeImages[i][1] + '"></img>');
+    	var itemAkcijeImg = $('<img src="' + carouselAkcijeImages[i][0] + '" alt="'+ carouselAkcijeImages[i][1] + '" class="akcije-image" data-target="' + (i+1) + '"></img>');
     	itemAkcijeDiv.append(itemAkcijeImg);
     	carouselAkcijeDiv.append(itemAkcijeDiv);
     }
     var carouselDekorDiv = $('.carousel-dekor');
     for (var i = 0; i < carouselDekorImages.length; i++) {
     	var itemDekorDiv = $('<div class="item"></div>');
-    	var itemDekorImg = $('<img src="' + carouselDekorImages[i][0] + '" alt=" '+ carouselDekorImages[i][1] + '"></img>');
+    	var itemDekorImg = $('<img src="' + carouselDekorImages[i][0] + '" alt="'+ carouselDekorImages[i][1] + '" class="dekor-image" data-target="' + (i+1) +  '"></img>');
     	itemDekorDiv.append(itemDekorImg);
     	carouselDekorDiv.append(itemDekorDiv);
     }
@@ -44,7 +44,7 @@ $(document).ready(function(){
     // carousel
     $('.carousel').slick({
         slidesToShow: 5,
-        infinite: true,
+        infinite: false,
         arrows: false,
         dots: true,
         responsive: [
@@ -66,17 +66,29 @@ $(document).ready(function(){
     // gallery images large
     var slideIndex = 1;
     var newImgDiv = $('.product-wrap-large');
-    var img = $('.product-image');
+    var productImg = $('.product-image');
+    var akcijeImg = $('.akcije-image');
+    var dekorImg = $('.dekor-image');
     var imgSrcs = [];
+    var imgAlts = [];
 
-    img.click(function(e){
-        for(var i = 0; i < img.length; i++){
-            imgSrcs[i] = img[i].getAttribute('src');
+    productImg.click(prepareForSlides);
+    akcijeImg.click(prepareForSlides);
+    dekorImg.click(prepareForSlides);
+
+    function prepareForSlides(e){
+        var clickedImageClass = $(this).attr('class');
+        var clickedImageArray = $('.' + clickedImageClass);
+        imgSrcs = [];
+        imgAlts = [];
+        for(var i = 0; i < clickedImageArray.length; i++){
+            imgSrcs[i] = clickedImageArray[i].getAttribute('src');
+            imgAlts[i] = clickedImageArray[i].getAttribute('alt'); 
         }
         $('#modal-box').css('display', 'block');
         var imgNumber = Number($(this).attr('data-target'));
         currentSlide(imgNumber);
-    });
+    }
 
     var arrow = $('.arrow');
     arrow.click(function(e){
