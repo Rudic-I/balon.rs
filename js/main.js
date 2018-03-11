@@ -63,7 +63,6 @@ $(document).ready(function(){
         ]
     });
 
-
     // gallery images large
     var slideIndex = 1;
     var newImgDiv = $('.product-wrap-large');
@@ -106,10 +105,5 @@ $(document).ready(function(){
     closeBtn.click(function(){
         $('#modal-box').css('display', 'none');
         newImgDiv.empty();
-    });
-
-    // contact-image-large 
-    $('#contact-image').on('click', function(){
-        $('.address-image-wrap').toggleClass('address-image-wrap-large');
     });
 });
