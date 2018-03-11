@@ -190,19 +190,13 @@ main {
 	width: 100%;
 	max-width: 450px;
 }
-.categories-two-dekor .products-wrap,
-.categories-two-stampa article {
+.categories-two-dekor .products-wrap {
 	width: 90%;
 	margin: 0 auto 20px;
 	padding-bottom: 15px;
 	border: 1px solid rgba(0,0,0,0.3);
 }
-.categories-two-stampa article {
-	padding: 10px 2px;
-	vertical-align: top;
-}
-.categories-two-dekor .products-wrap img,
-.categories-two-stampa article img {
+.categories-two-dekor .products-wrap img {
 	width: 100%;
 	max-width: 250px;
 	border: 1px solid rgba(0,0,0,0.6);
@@ -213,8 +207,7 @@ main {
 	max-width: 250px;
 	margin: 20px auto 0px;
 }
-.categories-two-dekor .products-wrap h3,
-.categories-two-stampa article h3 {
+.categories-two-dekor .products-wrap h3 {
 	text-transform: uppercase;
 	font-size: 18px;
 }
@@ -267,13 +260,39 @@ main {
 	text-align: center;
 	padding: 20px 5px;
 }
+.categories-two-stampa article {
+	margin-bottom: 10px;
+	position: relative;
+	text-align: left;
+}
+.categories-two-stampa article img {
+	width: 45%;
+	max-width: 220px;
+	border: 1px solid rgba(0,0,0,0.6);
+}
+.categories-two-stampa article div {
+	width: 50%;
+	max-width: 200px;
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	bottom: 10%;
+}
+.categories-two-stampa article h3 {
+	font-size: 14px;
+}
 .categories-two-stampa article h4 {
 	margin: 10px 0;
+	font-size: 12px;
 }
+.categories-two-stampa article p {
+	font-size: 11px;
+	letter-spacing: 0.8px;
+}
+
 .categories-two-stampa .prices-stampa {
-	height: 260px;
-	padding-top: 45px;
-	max-width: 450px;
+	text-align: center;
+	padding: 20px 0;
 }
 .print11 {
 	background-color: #ccff66;
@@ -474,6 +493,22 @@ address {
 	.categories-two-dekor .prices-dekor .price {
 		padding: 5px 11px;
 	}
+	.categories-two-stampa article {
+		width: 80%;
+		margin: 10px auto;
+	}
+	.categories-two-stampa article h3 {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	.categories-two-stampa article h4 {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.categories-two-stampa article p {
+		font-size: 14px;
+		letter-spacing: 0.8px;
+	}
 }
 
 /* -- min-width 768px -- */
@@ -501,6 +536,15 @@ address {
 	.categories-two .category-wrap .category-text-wrap {
 		width: 45%;
 		left: 50%;
+	}
+	.categories-two-stampa article {
+		vertical-align: top;
+	}
+	.categories-two-stampa article div {
+		bottom: 0;
+	}
+	.categories-two-stampa .prices-stampa {
+		height: 220px;
 	}
 	.final-level-image-lg img {
 		width: 48%;
